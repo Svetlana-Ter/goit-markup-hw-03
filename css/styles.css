@@ -4,13 +4,41 @@
 белый цвет #FFFFFF;
 основной цвет #757575;
 цвет футер: мейл, тел rgba(255, 255, 255, 0.6);
+цвет фона: #F5F4FA;
  */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
   --primary-text-color: #757575;
   --titles-color: #212121;
   --accent-color: #2196f3;
   --white-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid black;
 }
 
 body {
@@ -61,8 +89,8 @@ a {
   color: var(--accent-color);
 }
 
-/* Адрес в хедере*/
-.adress-info a {
+/* Контакты в хедере*/
+.contacts-info a {
   color: var(--primary-text-color);
 
   font-style: normal;
@@ -72,37 +100,54 @@ a {
   letter-spacing: 0.02em;
 }
 
-.adress-info a:hover,
-.adress-info a:focus {
+.contacts-info a:hover,
+.contacts-info a:focus {
   color: var(--accent-color);
 }
 
 /* Секция приветствия */
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
 .hero-title {
+  margin-bottom: 30px;
   color: var(--white-color);
   background-color: var(--primary-text-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero a {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   color: var(--white-color);
   background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /* Секции */
+.no-display {
+  display: none;
+}
+
+.section {
+  margin-bottom: 94px;
+}
 .section-title {
+  margin-bottom: 50px;
   color: var(--titles-color);
 
   font-weight: 700;
@@ -113,6 +158,7 @@ a {
 
 /* Принципы работы */
 .principles .title {
+  margin-top: 30px;
   color: var(--titles-color);
 
   font-weight: 700;
@@ -122,6 +168,7 @@ a {
 }
 
 .principles .text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -139,7 +186,17 @@ a {
 }
 
 /* Наша команда */
+.section.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.woker {
+  padding-bottom: 24px;
+}
 .name {
+  margin-top: 30px;
   color: var(--titles-color);
 
   font-weight: 500;
@@ -149,6 +206,8 @@ a {
 }
 
 .profession {
+  margin-top: 10px;
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -201,6 +260,13 @@ footer .social-link {
 }
 
 /* Портфолио */
+.section.examples {
+  margin-top: 94px;
+}
+
+.examples-choice {
+  margin-bottom: 34px;
+}
 .examples-choice button {
   color: var(--titles-color);
   background-color: #f5f4fa;
@@ -218,7 +284,11 @@ footer .social-link {
   background-color: var(--accent-color);
 }
 
+.box {
+  padding: 20px 24px;
+}
 .examples .title {
+  margin-bottom: 4px;
   color: var(--titles-color);
 
   font-weight: 700;

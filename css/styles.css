@@ -38,7 +38,6 @@ ul {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid black;
 }
 
 body {
@@ -311,32 +310,44 @@ a {
 }
 
 /* Футер */
+footer {
+  background-color: #2f303a;
+}
+
+footer .flex-container {
+  align-items: stretch;
+}
+
 .logo-and-adress {
-  background-color: blue;
+  margin-top: 45px;
+  margin-bottom: 28px;
 }
 
 .join {
-  background-color: red;
+  margin-top: 57px;
+  margin-bottom: 56px;
+
   margin-left: 69px;
   width: 206px;
   height: 80px;
 }
 
 .subscribe {
-  background-color: green;
+  margin-top: 57px;
+  margin-bottom: 50px;
+
   margin-left: auto;
   width: 570px;
   height: 86px;
 }
 
-footer {
-  background-color: #2f303a;
-}
 .logo-studio {
   color: var(--white-color);
 }
 
 .adress-footer {
+  margin-top: 8px;
+
   color: var(--white-color);
 
   font-style: normal;
@@ -345,6 +356,9 @@ footer {
 }
 
 .adress-footer a {
+  display: inline-block;
+  margin-top: 9px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -357,11 +371,19 @@ footer b {
   text-transform: uppercase;
 }
 
+footer .social-media {
+  margin-left: 0;
+  margin-top: 20px;
+}
+
 footer .social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .copyright {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
 
   font-size: 12px;

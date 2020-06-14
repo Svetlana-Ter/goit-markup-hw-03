@@ -315,27 +315,18 @@ footer {
 }
 
 footer .flex-container {
-  align-items: stretch;
-}
-
-.logo-and-adress {
-  margin-top: 45px;
-  margin-bottom: 28px;
+  padding-top: 45px;
+  padding-bottom: 28px;
+  align-items: baseline;
 }
 
 .join {
-  margin-top: 57px;
-  margin-bottom: 56px;
-
   margin-left: 69px;
   width: 206px;
   height: 80px;
 }
 
 .subscribe {
-  margin-top: 57px;
-  margin-bottom: 50px;
-
   margin-left: auto;
   width: 570px;
   height: 86px;

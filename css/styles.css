@@ -34,13 +34,6 @@ ul {
   padding: 0;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -56,11 +49,26 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Хедер */
 
 .flex-container {
   display: flex;
   align-items: center;
+}
+
+header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* Лого */
@@ -87,7 +95,7 @@ a {
 .site-menu .item:not(:first-child) {
   margin-left: 50px;
 }
-.site-menu a {
+.site-menu .link {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -100,8 +108,8 @@ a {
   letter-spacing: 0.02em;
 }
 
-.site-menu a:hover,
-.site-menu a:focus {
+.site-menu .link:hover,
+.site-menu .link:focus {
   color: var(--accent-color);
 }
 
@@ -118,7 +126,7 @@ a {
   margin-left: 30px;
 }
 
-.contacts-info a {
+.contacts-info > a {
   color: var(--primary-text-color);
 
   font-style: normal;
@@ -128,8 +136,8 @@ a {
   letter-spacing: 0.02em;
 }
 
-.contacts-info a:hover,
-.contacts-info a:focus {
+.contacts-info > a:hover,
+.contacts-info > a:focus {
   color: var(--accent-color);
 }
 
@@ -152,7 +160,7 @@ a {
   text-transform: uppercase;
 }
 
-.hero a {
+.hero > .link {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
@@ -168,8 +176,15 @@ a {
 }
 
 /* Секции */
-.no-display {
-  display: none;
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .section {
@@ -231,10 +246,6 @@ a {
   display: flex;
 }
 
-.work img {
-  display: block;
-}
-
 .work .item {
   width: calc((100% - 60px) / 3);
 }
@@ -261,29 +272,24 @@ a {
   background-color: var(--bg-color);
 }
 
-.workers {
-  display: flex;
-}
-
 .workers .item:not(:first-child) {
   margin-left: 30px;
+}
+
+.card-content {
+  padding: 30px 32px 24px 32px;
 }
 
 .workers .item {
   width: calc((100% - 90px) / 4);
   text-align: center;
-  padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
-.workers .item img {
-  display: block;
-}
-
 .name {
-  margin-top: 30px;
+  margin-bottom: 10px;
 
   color: var(--titles-color);
 
@@ -293,11 +299,14 @@ a {
 }
 
 .profession {
-  margin-top: 10px;
   margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
+}
+
+.social-link {
+  display: block;
 }
 
 .social-link img {
@@ -306,11 +315,7 @@ a {
 
 .social-media {
   display: flex;
-  justify-content: center;
-}
-
-.social-media li:not(:first-child) {
-  margin-left: 10px;
+  justify-content: space-between;
 }
 
 .social-link img:hover,
@@ -325,6 +330,10 @@ a {
 }
 
 .clients .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -349,7 +358,6 @@ footer .flex-container {
 .join {
   margin-left: 69px;
   width: 206px;
-  height: 80px;
 }
 
 .subscribe {
@@ -379,12 +387,13 @@ footer .flex-container {
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer b {
+.join > .title,
+.subscribe > .title {
   color: var(--white-color);
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14x;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
@@ -450,6 +459,10 @@ footer .social-media img:hover {
   flex-wrap: wrap;
 }
 
+.examples-list .link {
+  display: block;
+}
+
 .examples-list .item {
   border: 1px solid #eeeeee;
   width: calc((100% - 60px) / 3);
@@ -465,10 +478,6 @@ footer .social-media img:hover {
   margin-bottom: 0;
 }
 
-.examples-list .item img {
-  display: block;
-}
-
 .examples-list .item .box {
   padding: 20px 24px;
 }
@@ -482,7 +491,7 @@ footer .social-media img:hover {
   letter-spacing: 0.06em;
 }
 
-.examples-list p {
+.examples-list .type {
   color: var(--primary-text-color);
 
   font-size: 16px;

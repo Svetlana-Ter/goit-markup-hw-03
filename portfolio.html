@@ -17,19 +17,20 @@
   <body>
     <header>
       <div class="container flex-container">
-        <a href="./index.html" class="logo">
-          <span class="logo-web">Web</span> Studio</a
-        >
-        <nav>
+        <nav class="flex-container">
+          <a href="./index.html" class="logo">
+            <span class="logo-web">Web</span> Studio</a
+          >
+
           <ul class="site-menu">
             <li class="item">
-              <a href="./index.html">Студия</a>
+              <a class="link" href="./index.html">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="current">Портфолио</a>
+              <a class="link current" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
-              <a href="">Контакты</a>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +44,7 @@
       <!-- Наши работы (потом скрыть заголовок)-->
       <section class="section">
         <div class="container">
-          <h1 class="section-title no-display">Наши работы</h1>
+          <h1 class="section-title visually-hidden">Наши работы</h1>
           <ul class="examples-choice">
             <li class="item"><button>Все</button></li>
             <li class="item"><button>Веб-сайты</button></li>
@@ -53,11 +54,11 @@
           </ul>
           <ul class="examples-list">
             <li class="item">
-              <a href=""
+              <a class="link" href=""
                 ><img src="./images/techno-kryak.jpg" alt="Люди" />
                 <div class="box">
                   <h2 class="title">Технокряк</h2>
-                  <p>Веб-сайт</p>
+                  <p class="type">Веб-сайт</p>
                 </div>
                 <p class="description">
                   Технокряк это современная площадка распространения
@@ -71,7 +72,7 @@
                 <img src="./images/new-orlean.jpg" alt="Баскетболисты" />
                 <div class="box">
                   <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                  <p>Дизайн</p>
+                  <p class="type">Дизайн</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -85,7 +86,7 @@
                 <img src="./images/seafood.jpg" alt="Рыба" />
                 <div class="box">
                   <h2 class="title">Ресторан Seafood</h2>
-                  <p>Приложение</p>
+                  <p class="type">Приложение</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -99,7 +100,7 @@
                 <img src="./images/prime.jpg" alt="Наушники" />
                 <div class="box">
                   <h2 class="title">Проект Prime</h2>
-                  <p>Маркетинг</p>
+                  <p class="type">Маркетинг</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -113,7 +114,7 @@
                 <img src="./images/boxes.jpg" alt="Коробки" />
                 <div class="box">
                   <h2 class="title">Проект Boxes</h2>
-                  <p>Приложение</p>
+                  <p class="type">Приложение</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -127,7 +128,7 @@
                 <img src="./images/inspiration.jpg" alt="Монитор" />
                 <div class="box">
                   <h2 class="title">Inspiration has no Borders</h2>
-                  <p>Веб-сайт</p>
+                  <p class="type">Веб-сайт</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -141,7 +142,7 @@
                 <img src="./images/limited-edition.jpg" alt="Книга" />
                 <div class="box">
                   <h2 class="title">Издание Limited Edition</h2>
-                  <p>Дизайн</p>
+                  <p class="type">Дизайн</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -155,7 +156,7 @@
                 <img src="./images/lab.jpg" alt="Ярлык" />
                 <div class="box">
                   <h2 class="title">Проект LAB</h2>
-                  <p>Маркетинг</p>
+                  <p class="type">Маркетинг</p>
                 </div>
                 <p class="description">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -169,7 +170,7 @@
                 <img src="./images/growing-business.jpg" alt="Ноутбук" />
                 <div class="box">
                   <h2 class="title">Growing Business</h2>
-                  <p>Приложение</p>
+                  <p class="type">Приложение</p>
                 </div>
                 <p class="description">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -197,7 +198,7 @@
         </div>
 
         <div class="join">
-          <b>
+          <b class="title">
             Присоединяйтесь
           </b>
           <ul class="social-media">
@@ -225,7 +226,7 @@
         </div>
 
         <div class="subscribe">
-          <b>
+          <b class="title">
             Подпишитесь на рассылку
           </b>
         </div>
